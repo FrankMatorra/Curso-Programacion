@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Formulario Curriculum Vitae</title>
+
+ <head>
+   <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+   <style>
+    body {background-color: lightblue; }    
+    @media only screen and (max-width: 600px) {
+        body {background-color: lightgreen;}
+    }
+   </style>
+
+   <link href="styles.css" rel="stylesheet" type="text/css">
+   <body>
+    <script>
+        let d = new Date();
+        document.body.innerHTML = "<h2>La Hora actual es:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+      "</h2>"
+    </script>
+      <form action="" method="post">
+        <h1>     Curriculum Vitae</h1>
+        <div>
+            <label>dni</label>
+            <input type="number" name="dni" placeholder="Ingrese su DNI" required />
+        </div>
+        <div>
+            <label>Apellido y Nombres</label>
+            <input type="text" name="ayn" placeholder="Ingrese su Apellido y Nombres" required />
+        </div>
+        <div> 
+            <label>Fecha Nacimiento</label>
+            <input type="date" name="fn" placeholder="Fecha de Nacimiento" required />
+        </div>
+        
+        <div>
+            <label>telefono</label>
+            <input type="number" name="tel" placeholder="Ingrese su Telefono" required />
+        </div>
+
+        <div>                
+            <label>Mail</label>
+            <input type="email" name="mail" placeholder="Ingrese su Correo" required />
+        </div>
+        <div>
+            <label>Titulos</label>
+            <input type="text" name="titulos" placeholder="Describa Titulos Obtenidos" />
+        </div>
+        <div>
+            <label>Antecedentes Laborales</label>
+            <input type="file" name="antec" placeholder="Seleccione Archivo Laboral" />
+        </div>
+        <input type="submit" value="Enviar">
+     </form>
+   </body>
+ </head>
+</html>
